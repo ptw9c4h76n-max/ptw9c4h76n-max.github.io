@@ -20,6 +20,7 @@ body {
   padding: 14px;
   font-size: 18px;
   font-weight: 600;
+  padding-top: env(safe-area-inset-top);
 }
 
 /* TABS */
@@ -88,10 +89,11 @@ body {
 
 /* BOTTOM BUTTONS */
 .bottom {
-  position: fixed;
-  bottom: 18px;
+position: fixed;
+  bottom: calc(16px + env(safe-area-inset-bottom));
   left: 14px;
   right: 14px;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .btn {
@@ -186,4 +188,5 @@ function show(id, el) {
 
 </body>
 </html>
+
 
