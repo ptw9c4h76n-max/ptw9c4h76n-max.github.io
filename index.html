@@ -56,7 +56,9 @@ body {
 
 /* DOCUMENT */
 .card img {
-  width: 100vw;
+   width: 100%;
+  height: calc(100vh - 210px); /* header + tabs + кнопки */
+  object-fit: cover;
   height: 100vh;
   object-fit: cover;
   touch-action: pinch-zoom;
@@ -184,3 +186,4 @@ function show(id, el) {
 
 </body>
 </html>
+
